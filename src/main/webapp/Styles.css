@@ -13,4 +13,28 @@ nav {
     text-align: left;
     border: 2px;
     float: right;
+    
+}
+
+.center {
+    margin: auto;
+    width: 25%;
+    border: 3px solid green;
+    padding: 10px;
+    height: 200px;
+    background-color: red;
+}
+
+.content
+{
+    background-color: yellow;
+}
+
+.header{
+    margin-top: 40px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+    color: red;
+    background-color: pink;
+    
 }

@@ -11,14 +11,31 @@
 <html>
     <head>
         <title>Instagrim</title>
-        <link rel="stylesheet" type="text/css" href="Styles.css" />
+        <link rel="stylesheet" type="text/css" href="Styles.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <header>
+        <div class="header">
             <h1>InstaGrim ! </h1>
             <h2>Your world in Black and White</h2>
-        </header>
+        </div>
+        
+        <div class="content">
+            
+            <div class="center">
+                <h1>hey ! </h1>
+            </div> 
+            
+        </div>
+        
+        <div class="footer">
+            <ul>
+                <li class="footer"><a href="/Instagrim">Home</a></li>
+                <li>&COPY; Andy C</li>
+            </ul>
+        </div>
+        
+        <!--
         <nav>
             <ul>
 
@@ -45,12 +62,12 @@
                             
                     }%>
             </ul>
-        </nav>
-        <footer>
+        </nav> -->
+       <!-- <footer>
             <ul>
                 <li class="footer"><a href="/Instagrim">Home</a></li>
                 <li>&COPY; Andy C</li>
             </ul>
-        </footer>
+        </footer> -->
     </body>
 </html>
