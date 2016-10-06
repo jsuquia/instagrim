@@ -25,12 +25,12 @@
             <div class="center">
                 
                 <div class="username">
-                    <label><span class="hidden">Username</span></label>
+                    <div class="username_image"><span class="hidden">Username</span></div>
                     <input type="text" name="username">
                 </div>
 
                 <div class="password">
-                    <label><span class="hidden">Password</span></label>
+                    <label class="pass"><span class="hidden">Password</span></label>
                     <input type="password" name="password">
                 </div>
 

@@ -18,17 +18,65 @@ nav {
 
 .center {
     margin: auto;
-    width: 25%;
+    width: 20%;
     border: 3px solid green;
     padding: 10px;
     height: 200px;
-    /*background-color: red;*/
+    background-color: #2c3338;
+}
+
+.username, .password, .submit{
+    border-radius: .25rem;
+    border: 3px solid green;
+    height: 25%;
+    margin-bottom: 10px;
+}
+/*
+.password{
+    border-radius: .25rem;
+    border: 3px solid green;
+    height: 25%;
+    margin-bottom: 10px;
+}
+
+.submit{
+    border-radius: .25rem;
+    border: 3px solid green;
+    height: 25%;
+    margin-bottom: 10px;
+}*/
+
+.username_image, .pass{
+    margin: auto;
+    float: left;
+    height: 100%;
+    width: 20%;
+    background-color: #363b41;
+}
+
+input[type=text], input[type=password]{
+    margin: auto;
+    float: left;
+    height: 100%;
+    width: 80%;
+    border: none;
+    background-color: red;
+    /*background-color: #3b4148;*/
+}
+
+input[type=submit]{
+    margin: auto;
+    float: left;
+    border: none;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
 }
 
 .content
 {
     /*background-color: yellow;*/
-}
+} 
 
 .header{
     margin-top: 40px;
