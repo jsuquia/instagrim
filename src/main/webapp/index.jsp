@@ -23,7 +23,21 @@
         <div class="content">
             
             <div class="center">
-                <h1>hey ! </h1>
+                
+                <div class="username">
+                    <label><span class="hidden">Username</span></label>
+                    <input type="text" name="username">
+                </div>
+
+                <div class="password">
+                    <label><span class="hidden">Password</span></label>
+                    <input type="password" name="password">
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="Sign In">
+                </div>
+            
             </div> 
             
         </div>
