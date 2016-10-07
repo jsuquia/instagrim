@@ -24,7 +24,7 @@
                 <li><a href="/Instagrim/Images/majed">Sample Images</a></li>
             </ul>
         </nav>
-       
+       <!--
         <article>
             <h3>Login</h3>
             <form method="POST"  action="Login">
@@ -36,7 +36,7 @@
                 <input type="submit" value="Login"> 
             </form>
 
-        </article>
+        </article>-->
         <footer>
             <ul>
                 <li class="footer"><a href="/Instagrim">Home</a></li>

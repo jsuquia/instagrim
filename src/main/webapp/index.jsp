@@ -24,23 +24,28 @@
         
         <div class="content">
             
-            <div class="center">
+            <form method="POST"  action="Login">
                 
-                <div class="username">
-                    <div class="fontawesome-user" for="login__username"></div>
-                    <input type="text" name="username">
-                </div>
+                <div class="center">
 
-                <div class="password">
-                    <label class="fontawesome-lock" for="login__password"></label>
-                    <input type="password" name="password">
-                </div>
+                    <div class="username">
+                        <div class="fontawesome-user" for="login__username"></div>
+                        <input type="text" name="username">
+                    </div>
 
-                <div class="submit">
-                    <input type="submit" value="SIGN IN">
-                </div>
+                    <div class="password">
+                        <label class="fontawesome-lock" for="login__password"></label>
+                        <input type="password" name="password">
+                    </div>
+
+                    <div class="submit">
+                        <input type="submit" value="LOGIN">
+                    </div>
             
-            </div> 
+                </div> 
+            
+            </form>
+
             
         </div>
         
@@ -51,7 +56,7 @@
             </ul>
         </div>
         
-        <!--
+        
         <nav>
             <ul>
 
@@ -78,7 +83,7 @@
                             
                     }%>
             </ul>
-        </nav> -->
+        </nav>
        <!-- <footer>
             <ul>
                 <li class="footer"><a href="/Instagrim">Home</a></li>
