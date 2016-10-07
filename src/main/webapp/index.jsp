@@ -27,12 +27,12 @@
             <div class="center">
                 
                 <div class="username">
-                    <div class="fontawesome-user" for="login__username"><span class="hidden"></span></div>
+                    <div class="fontawesome-user" for="login__username"></div>
                     <input type="text" name="username">
                 </div>
 
                 <div class="password">
-                    <label class="fontawesome-lock" for="login__password"><span class="hidden"></span></label>
+                    <label class="fontawesome-lock" for="login__password"></label>
                     <input type="password" name="password">
                 </div>
 
