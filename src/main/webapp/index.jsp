@@ -7,6 +7,8 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="uk.ac.dundee.computing.aec.instagrim.stores.*" %>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,12 +27,12 @@
             <div class="center">
                 
                 <div class="username">
-                    <div class="username_image"><span class="hidden">Username</span></div>
+                    <div class="fontawesome-user" for="login__username"><span class="hidden"></span></div>
                     <input type="text" name="username">
                 </div>
 
                 <div class="password">
-                    <label class="pass"><span class="hidden">Password</span></label>
+                    <label class="fontawesome-lock" for="login__password"><span class="hidden"></span></label>
                     <input type="password" name="password">
                 </div>
 
