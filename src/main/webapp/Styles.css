@@ -33,20 +33,6 @@ nav {
     height: 25%;
     margin-bottom: 10px;
 }
-/*
-.password{
-    border-radius: .25rem;
-    border: 3px solid green;
-    height: 25%;
-    margin-bottom: 10px;
-}
-
-.submit{
-    border-radius: .25rem;
-    border: 3px solid green;
-    height: 25%;
-    margin-bottom: 10px;
-}*/
 
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
@@ -99,6 +85,5 @@ input[type=submit]{
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     text-align: center;
     color: red;
-   /* background-color: pink;*/
     
 }
