@@ -17,10 +17,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <!--<div class="header">
-            <h1>InstaGrim ! </h1>
-            <h2>Your world in Black and White</h2>
-        </div>-->
         
         <div class="content">
             
@@ -85,8 +81,8 @@
                             }else{
                                 %>
                 
-                 <li><a href="register.jsp">Register</a></li>
-                <li><a href="login.jsp">Login</a></li>
+                 <!--<li><a href="register.jsp">Register</a></li>
+                <li><a href="login.jsp">Login</a></li>-->
                 <%
                                         
                             

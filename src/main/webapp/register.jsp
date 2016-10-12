@@ -13,17 +13,50 @@
         <link rel="stylesheet" type="text/css" href="Styles.css" >
     </head>
     <body>
-        <header>
-        <h1>InstaGrim ! </h1>
-        <h2>Your world in Black and White</h2>
-        </header>
-        <nav>
+       <!-- <nav>
             <ul>
                 
                 <li><a href="/Instagrim/Images/majed">Sample Images</a></li>
             </ul>
-        </nav>
+        </nav>-->
        
+        <div class="content">
+            
+            <form method="POST"  action="Register">
+                
+                <div class="center">
+
+                    <div class="title">
+                        <h1>InstaGrim ! </h1>
+                        <h2>Your world in Black and White</h2>
+                    </div>
+                    
+                    <div class="username">
+                        <div class="fontawesome-user" for="login__username"></div>
+                        <input type="text" name="username">
+                    </div>
+
+                    <div class="password">
+                        <label class="fontawesome-lock" for="login__password"></label>
+                        <input type="password" name="password">
+                    </div>
+
+                    <div class="submit">
+                        <input type="submit" value="REGISTER">
+                    </div>
+                    
+                    <div class="register">
+                        <h3>By Signing up, you agree to our</h3>
+                        <h3>Terms & Privacy Policy</h3>
+                    </div>
+            
+                </div> 
+            
+            </form>
+
+            
+        </div>
+        <!--
         <article>
             <h3>Register as user</h3>
             <form method="POST"  action="Register">
@@ -35,7 +68,7 @@
                 <input type="submit" value="Regidter"> 
             </form>
 
-        </article>
+        </article>-->
         <footer>
             <ul>
                 <li class="footer"><a href="/Instagrim">Home</a></li>
