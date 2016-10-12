@@ -17,10 +17,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <div class="header">
+        <!--<div class="header">
             <h1>InstaGrim ! </h1>
             <h2>Your world in Black and White</h2>
-        </div>
+        </div>-->
         
         <div class="content">
             
@@ -28,6 +28,11 @@
                 
                 <div class="center">
 
+                    <div class="title">
+                        <h1>InstaGrim ! </h1>
+                        <h2>Your world in Black and White</h2>
+                    </div>
+                    
                     <div class="username">
                         <div class="fontawesome-user" for="login__username"></div>
                         <input type="text" name="username">
@@ -40,6 +45,10 @@
 
                     <div class="submit">
                         <input type="submit" value="LOGIN">
+                    </div>
+                    
+                    <div class="register">
+                        <h3>Not a member? <a href="register.jsp">Sign up now!</a></h3>
                     </div>
             
                 </div> 
