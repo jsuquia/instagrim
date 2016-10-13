@@ -27,7 +27,7 @@
                 <div class="center">
 
                     <div class="title">
-                        <h1>InstaGrim ! </h1>
+                        <h1><span style="color: black">Insta</span><span style="color: #696969">Grim</span></h1>
                         <h2>Your world in Black and White</h2>
                     </div>
                     
@@ -46,8 +46,8 @@
                     </div>
                     
                     <div class="register">
-                        <h3>By Signing up, you agree to our</h3>
-                        <h3>Terms & Privacy Policy</h3>
+                        <h4>By Signing up, you agree to our</h4>
+                        <h4>Terms & Privacy Policy</h4>
                     </div>
             
                 </div> 

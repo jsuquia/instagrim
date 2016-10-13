@@ -25,8 +25,8 @@ nav {
 
 .center {
     margin: auto;
-    width: 25%;
-    margin-top: 5%;
+    width: 400px;
+    margin-top: 10%;
     border: 3px solid white;
     border-radius: .25rem;
     padding: 10px;
@@ -69,7 +69,7 @@ input[type=text], input[type=password]{
     padding-left: 5%; 
     margin: auto;
     float: left;
-    height: 92%;
+    height: 56px;
     width: 74%;
     border: 0.5px solid #D3D3D3;
     border-radius: .25rem;
@@ -121,5 +121,10 @@ h2{
 h3{
     font-size: 14px;
     color: #696969;
-    margin-top: -2px;
+}
+
+h4{
+    font-size: 14px;
+    color: #696969;
+    margin-top: -5px;
 }

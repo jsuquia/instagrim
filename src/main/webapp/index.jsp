@@ -25,7 +25,7 @@
                 <div class="center">
 
                     <div class="title">
-                        <h1>InstaGrim ! </h1>
+                        <h1><span style="color: black">Insta</span><span style="color: #696969">Grim</span></h1>
                         <h2>Your world in Black and White</h2>
                     </div>
                     
@@ -61,39 +61,22 @@
             </ul>
         </div>
         
-        
-        <nav>
-            <ul>
-
-               
-                <li><a href="upload.jsp">Upload</a></li>
-                    <%
+        <%
                         
-                        LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");
-                        if (lg != null) {
-                            String UserName = lg.getUsername();
-                            if (lg.getlogedin()) {
-                    %>
-
-                <li><a href="/Instagrim/Images/<%=lg.getUsername()%>">Your Images</a></li>
-                <li><a href="/Instagrim/Logout">Logout</a></li>
-                    <%}
-                            }else{
-                                %>
+           LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");
+            if (lg != null) 
+            {
+                String UserName = lg.getUsername();
+                if (lg.getlogedin()) 
+                {
+                    RequestDispatcher rd =request.getRequestDispatcher("/login.jsp");
+                    rd.forward(request,response);
+                }
+            }
+            else
+            {
                 
-                 <!--<li><a href="register.jsp">Register</a></li>
-                <li><a href="login.jsp">Login</a></li>-->
-                <%
-                                        
-                            
-                    }%>
-            </ul>
-        </nav>
-       <!-- <footer>
-            <ul>
-                <li class="footer"><a href="/Instagrim">Home</a></li>
-                <li>&COPY; Andy C</li>
-            </ul>
-        </footer> -->
+            }
+        %>                   
     </body>
 </html>
