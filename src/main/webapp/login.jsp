@@ -40,6 +40,7 @@
                     %>
 
                 <li><a href="/Instagrim/Images/<%=lg.getUsername()%>">Your Images</a></li>
+                <li><a href="/Instagrim/Profile">Profile</a></li>
                 <li><a href="/Instagrim/Logout">Logout</a></li>
 
                 <%

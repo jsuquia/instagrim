@@ -31,12 +31,12 @@
                     
                     <div class="username">
                         <div class="fontawesome-user" for="login__username"></div>
-                        <input type="text" name="username">
+                        <input type="text" name="username" required="required">
                     </div>
 
                     <div class="password">
                         <label class="fontawesome-lock" for="login__password"></label>
-                        <input type="password" name="password">
+                        <input type="password" name="password" required="required"> <!--minlength="6"-->
                     </div>
 
                     <div class="submit">
@@ -64,12 +64,9 @@
         <%            
            LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");
             if (lg != null) 
-            {
-                if (lg.getlogedin()) 
-                {
-                    RequestDispatcher rd =request.getRequestDispatcher("/login.jsp");
-                    rd.forward(request,response);
-                }
+            {            
+                RequestDispatcher rd =request.getRequestDispatcher("/login.jsp");
+                rd.forward(request,response);
             }
             else
             {
