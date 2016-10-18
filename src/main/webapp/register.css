@@ -26,7 +26,7 @@ nav {
 .center {
     margin: auto;
     width: 400px;
-    height: 400px;
+    height: 500px;
     border: 3px solid white;
     border-radius: .25rem;
     padding: 10px;
@@ -37,48 +37,40 @@ nav {
     background-color: white;
 }
 
-.username, .password, .submit{
+.fullname, .username, .email, .password, .submit{
     border-radius: .25rem;
-    height: 15%;
-    margin-bottom: 10px;
+    height: 40px;
+    margin-bottom: 15px;
 }
 
 .submit{
-    height: 15%;
+    height: 10%;
 }
 
-[class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
-  color: #696969;
-  font-size: 20px;
-}
 
-.fontawesome-user, .fontawesome-lock{
-    margin: auto;
-    float: left;
-    width: 20%;
-    text-align: center;
-    height: 100%;
-    line-height: 60px;
-    background-color: #D3D3D3;
-    border-radius: .25rem;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-}
 
-input[type=text], input[type=password]{
+input[type=text], input[type=email], input[type=password]{
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #696969;
     padding-left: 5%; 
     margin: auto;
     float: left;
-    height: 56px;
-    width: 74%;
+    height: 100%;
+    width: 94.5%;
     border: 0.5px solid #D3D3D3;
     border-radius: .25rem;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
     background-color: white;
+}
+
+#firstname{
+    width: 42%;
+    height: 100%;
+    margin-right: 5%;
+}
+
+#surname{
+    width: 42%;
+    height: 100%;
 }
 
 input[type=submit]{
@@ -124,4 +116,13 @@ h4{
     font-size: 14px;
     color: #696969;
     margin-top: -5px;
-}
+}/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 18, 2016, 11:16:42 AM
+    Author     : Javier
+*/
+

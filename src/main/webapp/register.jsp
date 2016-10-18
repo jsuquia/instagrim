@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Instagrim</title>
-        <link rel="stylesheet" type="text/css" href="Styles.css" >
+        <link rel="stylesheet" type="text/css" href="register.css" >
     </head>
     <body>
        <!-- <nav>
@@ -31,18 +31,25 @@
                         <h2>Your world in Black and White</h2>
                     </div>
                     
-                    <div class="username">
-                        <div class="fontawesome-user" for="login__username"></div>
-                        <input type="text" name="username">
+                    <div class="fullname">
+                        <input type="text" ID="firstname" name="firstname" value="Name" onfocus="this.value = this.value=='Name'?'':this.value;" onblur="this.value = this.value==''?'Name':this.value;"/> 
+                        <input type="text" ID="surname" name="surname" value="Surname" onfocus="this.value = this.value=='Surname'?'':this.value;" onblur="this.value = this.value==''?'Surname':this.value;"/>
                     </div>
-
+                    
+                    <div class="username">
+                        <input type="text" name="username" value="Username" onfocus="this.value = this.value=='Username'?'':this.value;" onblur="this.value = this.value==''?'Username':this.value;"/>
+                    </div>
+                    
+                    <div class="email">
+                        <input type="email" name="email" value="Email" onfocus="this.value = this.value=='Email'?'':this.value;" onblur="this.value = this.value==''?'Email':this.value;"/>
+                    </div>
+                    
                     <div class="password">
-                        <label class="fontawesome-lock" for="login__password"></label>
-                        <input type="password" name="password">
+                        <input type="password" name="password" value="Password" onfocus="this.value = this.value=='Password'?'':this.value;" onblur="this.value = this.value==''?'Password':this.value;"/>
                     </div>
 
                     <div class="submit">
-                        <input type="submit" value="REGISTER">
+                        <input type="submit" value="REGISTER"/>
                     </div>
                     
                     <div class="register">
