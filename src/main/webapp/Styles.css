@@ -8,19 +8,12 @@ and open the template in the editor.
     Author     : Administrator
 */
 
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/*@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);*/
 
 body {
     background-image: url("background.jpg");
     background-size: 100%; 
-}
-
-nav {
-    text-align: left;
-    border: 2px;
-    float: right;
-    
 }
 
 .center {
