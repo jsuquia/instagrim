@@ -8,12 +8,12 @@ and open the template in the editor.
     Author     : Javier
 */
 
-html, body{
+body{
     margin:0px;
-    padding: 0px; 
+    padding: 0px;
 }
 
-.top{
+header{
     height: 130px;
     background-color: #eae8e8;
 }
@@ -65,4 +65,13 @@ li a:hover:not(.active) {
 li a.active {
     color: white;
     background-color: #4CAF50;
+}
+
+#images{
+    background-color: #eae8e8;
+}
+
+.mySlides{
+    width: 100%;
+    height: 100%;
 }
