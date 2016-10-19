@@ -12,8 +12,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Instagrim</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
         <link rel="stylesheet" type="text/css" href="Login.css" >
-        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
         <style>
             .mySlides {display:none}
             .w3-left, .w3-right, .w3-badge {cursor:pointer}
@@ -51,6 +52,70 @@
     </header>
 
     <body>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="img3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img5.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!--<div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>-->
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+
+
+
+
+        <!--
+        
         <div class="w3-content w3-display-container" ID="images" style="max-width: 100%" style="max-height: 100%">
             <img class="mySlides" src="img4.jpg">
             <img class="mySlides" src="img5.jpg">
@@ -95,7 +160,7 @@
                 x[slideIndex - 1].style.display = "block";
                 dots[slideIndex - 1].className += " w3-white";
             }
-        </script>
+        </script>-->
 
 
     </body>
