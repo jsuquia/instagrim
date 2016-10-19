@@ -52,7 +52,6 @@
     </header>
 
     <body>
-
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <img src="img3.jpg" style="width:100%">
@@ -70,12 +69,6 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
-
-        <!--<div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>-->
 
         <script>
             var slideIndex = 1;
@@ -109,60 +102,6 @@
                 dots[slideIndex - 1].className += " active";
             }
         </script>
-
-
-
-
-
-        <!--
-        
-        <div class="w3-content w3-display-container" ID="images" style="max-width: 100%" style="max-height: 100%">
-            <img class="mySlides" src="img4.jpg">
-            <img class="mySlides" src="img5.jpg">
-            <img class="mySlides" src="img3.jpg">
-            <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
-                <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-            </div>
-        </div>
-
-        <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
-
-            function plusDivs(n) {
-                showDivs(slideIndex += n);
-            }
-
-            function currentDiv(n) {
-                showDivs(slideIndex = n);
-            }
-
-            function showDivs(n) {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("demo");
-                if (n > x.length) {
-                    slideIndex = 1
-                }
-                if (n < 1) {
-                    slideIndex = x.length
-                }
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" w3-white", "");
-                }
-                x[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " w3-white";
-            }
-        </script>-->
-
-
     </body>
 
     <!--        
