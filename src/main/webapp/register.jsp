@@ -32,7 +32,7 @@
                     </div>
                     
                     <div class="fullname">
-                        <input type="text" ID="firstname" name="firstname" value="Name" onfocus="this.value = this.value=='Name'?'':this.value;" onblur="this.value = this.value==''?'Name':this.value;"/> 
+                        <input type="text" ID="firstname" name="firstname" value="Name" onfocus="this.value = this.value=='Name'?'':this.value;" onblur="this.value = this.value==''?'Name':this.value;"> 
                         <input type="text" ID="surname" name="surname" value="Surname" onfocus="this.value = this.value=='Surname'?'':this.value;" onblur="this.value = this.value==''?'Surname':this.value;"/>
                     </div>
                     

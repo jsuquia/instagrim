@@ -46,7 +46,7 @@ public final class Keyspaces {
                      + "     password text,\n"
                     + "      first_name text,\n"
                     + "      last_name text,\n"
-                    + "      email set<text>,\n"
+                    + "      email text,\n"
                     + "      addresses  map<text, frozen <address>>\n"
                     + "  );";
             Session session = c.connect();
@@ -66,6 +66,8 @@ public final class Keyspaces {
             System.out.println("" + CreatePicTable);
 
             try {
+                //SimpleStatement cqlQuery1 = new SimpleStatement("DROP TABLE instagrim.Pics;");
+                //session.execute(cqlQuery1);
                 SimpleStatement cqlQuery = new SimpleStatement(CreatePicTable);
                 session.execute(cqlQuery);
             } catch (Exception et) {
@@ -74,6 +76,8 @@ public final class Keyspaces {
             System.out.println("" + Createuserpiclist);
 
             try {
+                //SimpleStatement cqlQuery1 = new SimpleStatement("DROP TABLE instagrim.userpiclist;");
+                //session.execute(cqlQuery1);
                 SimpleStatement cqlQuery = new SimpleStatement(Createuserpiclist);
                 session.execute(cqlQuery);
             } catch (Exception et) {
@@ -81,6 +85,8 @@ public final class Keyspaces {
             }
             System.out.println("" + CreateAddressType);
             try {
+                //SimpleStatement cqlQuery1 = new SimpleStatement("DROP TABLE instagrim.address;");
+                //session.execute(cqlQuery1);
                 SimpleStatement cqlQuery = new SimpleStatement(CreateAddressType);
                 session.execute(cqlQuery);
             } catch (Exception et) {
@@ -88,6 +94,8 @@ public final class Keyspaces {
             }
             System.out.println("" + CreateUserProfile);
             try {
+                //SimpleStatement cqlQuery1 = new SimpleStatement("DROP TABLE instagrim.userprofiles;");
+                //session.execute(cqlQuery1);
                 SimpleStatement cqlQuery = new SimpleStatement(CreateUserProfile);
                 session.execute(cqlQuery);
             } catch (Exception et) {

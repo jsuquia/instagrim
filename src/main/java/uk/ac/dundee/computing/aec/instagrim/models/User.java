@@ -37,7 +37,7 @@ public class User {
             return false;
         }
         Session session = cluster.connect("instagrim");
-        PreparedStatement ps = session.prepare("insert into userprofiles (login,password, first_name, last_name, email set) Values(?,?,?,?,?)");
+        PreparedStatement ps = session.prepare("insert into userprofiles (login, password, first_name, last_name, email) Values(?,?,?,?,?)");
        
         BoundStatement boundStatement = new BoundStatement(ps);
         session.execute( // this is where the query is executed
@@ -79,6 +79,29 @@ public class User {
     
     return false;  
     }
+    
+    /**
+     *
+     * @param username
+     * @return
+     */
+    public String getFirstName(String username){
+        Session session = cluster.connect("instagrim");
+        PreparedStatement ps = session.prepare("select first_name from userprofiles where login =?");
+        ResultSet rs = null;
+        BoundStatement boundStatement = new BoundStatement(ps);
+        rs = session.execute( // this is where the query is executed
+                boundStatement.bind( // here you are binding the 'boundStatement'
+                        username));
+        //We are assuming this always works.  Also a transaction would be good here !
+        String us = null;
+        for (Row row : rs) {
+                us = row.getString("first_name");
+
+            }
+        return us;
+    }
+    
        public void setCluster(Cluster cluster) {
         this.cluster = cluster;
     }
