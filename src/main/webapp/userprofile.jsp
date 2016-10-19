@@ -14,6 +14,8 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-    <%=request.getAttribute("First_name")%>
+    <%=request.getAttribute("first_name")%>
+    <%=request.getAttribute("last_name")%>
+    <%=request.getAttribute("email")%>
     </body>
 </html>

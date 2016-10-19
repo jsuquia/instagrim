@@ -11,25 +11,19 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Instagrim</title>
-        <!--<link rel="stylesheet" type="text/css" href="Styles.css" >-->
-
+        <link rel="stylesheet" type="text/css" href="Login.css" >
     </head>
-    <body>
-        <header>
-            <h1>InstaGrim ! </h1>
-            <h2>Your world in Black and White</h2>
-        </header>
-        <nav>
+    
+    <body> 
+        <div class="top">
+            <div class="title">
+                <h1><span style="color: black">Insta</span><span style="color: #696969">Grim</span></h1>
+                <h2>Your world in Black and White</h2>
+            </div>
+            
             <ul>
-
+                <li class="home"><a href="/Instagrim">Home</a></li>
                 <li><a href="/Instagrim/Images/majed">Sample Images</a></li>
-            </ul>
-        </nav>
-
-        <nav>
-            <ul>
-
-
                 <li><a href="upload.jsp">Upload</a></li>
                     <%
 
@@ -37,25 +31,22 @@
                         if (lg != null) {
                             String UserName = lg.getUsername();
                             if (lg.getlogedin()) {
+                            }
+                        }
                     %>
 
                 <li><a href="/Instagrim/Images/<%=lg.getUsername()%>">Your Images</a></li>
                 <li><a href="/Instagrim/Profile">Profile</a></li>
                 <li><a href="/Instagrim/Logout">Logout</a></li>
 
-                <%
-                        }
-                    }
-                %>
-
 
             </ul>
-        </nav>
-
+        </div>
+        <!--        
         <footer>
             <ul>
                 <li class="footer"><a href="/Instagrim">Home</a></li>
             </ul>
-        </footer>
+        </footer>-->
     </body>
 </html>
