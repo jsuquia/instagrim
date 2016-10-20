@@ -67,6 +67,7 @@
             .alert {
                 padding: 20px;
                 background-color: #ff9800;
+                border-radius: .25rem;
                 color: white;
             }
 
