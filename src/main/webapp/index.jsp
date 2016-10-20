@@ -43,7 +43,7 @@
                     </div>
                     
                     <div class="register">
-                        <h3>Not a member? <a href="register.jsp">Sign up now!</a></h3>
+                        <h3>Not a member? <a href="/Instagrim/Register">Sign up now!</a></h3>
                     </div>
             
                 </div> 

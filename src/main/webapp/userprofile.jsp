@@ -46,11 +46,9 @@
         <br>
         <h3>First Name</h3>
         <div class="details">--> <%=request.getAttribute("first_name")%></div>
-        <br>
         <h3>Last Name</h3>
         <div class="details">--> <%=request.getAttribute("last_name")%></div>
         <h3>Email</h3>
-        <br>
         <div class="details">--> <%=request.getAttribute("email")%></div>
     </body>
 </html>
