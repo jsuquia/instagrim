@@ -23,7 +23,7 @@
 
         <ul>
             <li class="home"><a href="/Instagrim">Home</a></li>
-            <li><a href="upload.jsp">Upload</a></li>
+            <li><a href="/Instagrim/Upload">Upload</a></li>
                 <%
 
                     LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");
@@ -35,7 +35,7 @@
                 %>
 
             <li><a href="/Instagrim/Images/<%=lg.getUsername()%>">Your Images</a></li>
-            <li><a href="/Instagrim/Profile">Profile</a></li>
+            <li><a class="current">Profile</a></li>
             <li><a href="/Instagrim/Logout">Logout</a></li>
 
 

@@ -22,8 +22,8 @@
         </div>
 
         <ul>
-            <li class="home"><a href="/Instagrim">Home</a></li>
-            <li><a href="upload.jsp">Upload</a></li>
+            <li class="home"><a class="current">Home</a></li>
+            <li><a href="/Instagrim/Upload">Upload</a></li>
                 <%
 
                     LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");

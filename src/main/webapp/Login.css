@@ -44,6 +44,10 @@ h3{
     font-size: 15px;
 }
 
+.margin{
+    margin-left: 50px;
+}
+
 .title{
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     float: left;
@@ -79,7 +83,6 @@ li a:hover:not(.active) {
     background-color: #ddd;
 }
 
-li a.active {
-    color: white;
-    background-color: #4CAF50;
+li a.current{
+    background-color: #ddd;
 }

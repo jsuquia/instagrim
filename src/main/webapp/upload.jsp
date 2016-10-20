@@ -23,7 +23,7 @@
 
         <ul>
             <li class="home"><a href="/Instagrim">Home</a></li>
-            <li><a href="upload.jsp">Upload</a></li>
+            <li><a class="current">Upload</a></li>
                 <%
 
                     LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");
@@ -42,18 +42,9 @@
         </ul>
     </header>
     <body>
-        <h1>InstaGrim ! </h1>
-        <h2>Your world in Black and White</h2>
-        <nav>
-            <ul>
-                <li class="nav"><a href="upload.jsp">Upload</a></li>
-                <li class="nav"><a href="/Instagrim/Images/majed">Sample Images</a></li>
-            </ul>
-        </nav>
- 
         <article>
             <h3>File Upload</h3>
-            <form method="POST" enctype="multipart/form-data" action="Image">
+            <form class="margin" method="POST" enctype="multipart/form-data" action="Image">
                 File to upload: <input type="file" name="upfile"><br/>
 
                 <br/>
@@ -61,10 +52,10 @@
             </form>
 
         </article>
-        <footer>
+        <!--<footer>
             <ul>
                 <li class="footer"><a href="/Instagrim">Home</a></li>
             </ul>
-        </footer>
+        </footer>-->
     </body>
 </html>
