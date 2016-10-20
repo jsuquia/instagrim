@@ -14,7 +14,6 @@ import com.datastax.driver.core.Row;
 import com.datastax.driver.core.Session;
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
-
 import uk.ac.dundee.computing.aec.instagrim.lib.AeSimpleSHA1;
 import uk.ac.dundee.computing.aec.instagrim.stores.Pic;
 
@@ -23,7 +22,7 @@ import uk.ac.dundee.computing.aec.instagrim.stores.Pic;
  * @author Administrator
  */
 public class User {
-    private Cluster cluster;
+    Cluster cluster;
     public User(){
         
     }
@@ -103,42 +102,9 @@ public class User {
         return us;
     }
     
-    public String getLastName(String username){
-        Session session = cluster.connect("instagrim");
-        PreparedStatement ps = session.prepare("select last_name from userprofiles where login =?");
-        ResultSet rs = null;
-        BoundStatement boundStatement = new BoundStatement(ps);
-        rs = session.execute( // this is where the query is executed
-                boundStatement.bind( // here you are binding the 'boundStatement'
-                        username));
-        //We are assuming this always works.  Also a transaction would be good here !
-        String us = null;
-        for (Row row : rs) {
-                us = row.getString("last_name");
-
-            }
-        return us;
-    }
-    
-    public String getEmail(String username){
-        Session session = cluster.connect("instagrim");
-        PreparedStatement ps = session.prepare("select email from userprofiles where login =?");
-        ResultSet rs = null;
-        BoundStatement boundStatement = new BoundStatement(ps);
-        rs = session.execute( // this is where the query is executed
-                boundStatement.bind( // here you are binding the 'boundStatement'
-                        username));
-        //We are assuming this always works.  Also a transaction would be good here !
-        String us = null;
-        for (Row row : rs) {
-                us = row.getString("email");
-
-            }
-        return us;
-    }
-    
        public void setCluster(Cluster cluster) {
         this.cluster = cluster;
     }
+
     
 }

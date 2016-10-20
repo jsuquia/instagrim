@@ -11,7 +11,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Instagrim</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="Main.css" >
     </head>
 
@@ -35,18 +34,18 @@
                         }
                     }
                 %>
-
             <li><a href="/Instagrim/Images/<%=lg.getUsername()%>">Your Images</a></li>
             <li><a href="/Instagrim/Profile">Profile</a></li>
             <li><a href="/Instagrim/Logout">Logout</a></li>
 
-
         </ul>
     </header>
 
-    <body>
-        
-    </body>
+    <footer>
+        <ul>
+            <li class="footer"><a href="/Instagrim">Home</a></li>
+        </ul>
+    </footer>
 
     <!--        
     <footer>
