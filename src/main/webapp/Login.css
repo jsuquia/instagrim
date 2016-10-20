@@ -11,7 +11,7 @@ and open the template in the editor.
 html,body{
     margin:0px;
     padding: 0px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 header{
@@ -85,4 +85,9 @@ li a:hover:not(.active) {
 
 li a.current{
     background-color: #ddd;
+}
+
+.grid{
+    margin-left: 50px;
+    margin-bottom: 20px;
 }

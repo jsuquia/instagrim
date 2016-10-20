@@ -41,7 +41,7 @@
 
         </ul>
     </header>
-            
+
     <article>
         <h1 class="margin">Your Pics</h1>
         <%
@@ -57,14 +57,17 @@
                 Pic p = (Pic) iterator.next();
 
         %>
-        <a href="/Instagrim/Image/<%=p.getSUUID()%>" ><img class="margin" src="/Instagrim/Thumb/<%=p.getSUUID()%>"></a><br/><%
+        <a href="/Instagrim/Image/<%=p.getSUUID()%>"></a> <img class="grid" src="/Instagrim/Thumb/<%=p.getSUUID()%>">
+        
+
+        <%
 
                 }
             }
-            %>
+        %>
     </article>
 
-    <footer>
+    <!--<footer>
         <ul>
             <li class="footer"><a href="/Instagrim">Home</a></li>
         </ul>
