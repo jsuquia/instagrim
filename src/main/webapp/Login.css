@@ -14,6 +14,20 @@ html,body{
     /*overflow: hidden;*/
 }
 
+div.fill-screen {
+    position: fixed;
+    max-height: 100%;
+    left: 0;
+    right: 0;
+    top: 130px;
+    bottom: 0;
+    text-align: center;
+    background-image: url("main.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 header{
     height: 130px;
     background-color: #eae8e8;
