@@ -13,7 +13,7 @@
 <html>
     <head>
         <title>Instagrim</title>
-        <link rel="stylesheet" type="text/css" href="Index.css">
+        <link rel="stylesheet" type="text/css" href="Main.css">
     </head>
     <body>
         

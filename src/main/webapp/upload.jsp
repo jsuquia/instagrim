@@ -12,7 +12,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Instagrim</title>
-        <link rel="stylesheet" type="text/css" href="Login1.css" >
+        <link rel="stylesheet" type="text/css" href="Login.css" >
     </head>
     
     <header>
@@ -23,7 +23,6 @@
 
         <ul>
             <li class="home"><a href="/Instagrim">Home</a></li>
-            <li><a href="/Instagrim/Images/majed">Sample Images</a></li>
             <li><a href="upload.jsp">Upload</a></li>
                 <%
 

@@ -12,7 +12,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>User Profile</title>
-        <link rel="stylesheet" type="text/css" href="Login1.css" >
+        <link rel="stylesheet" type="text/css" href="Login.css" >
     </head>
     
     <header>
@@ -23,7 +23,6 @@
 
         <ul>
             <li class="home"><a href="/Instagrim">Home</a></li>
-            <li><a href="/Instagrim/Images/majed">Sample Images</a></li>
             <li><a href="upload.jsp">Upload</a></li>
                 <%
 
@@ -44,7 +43,14 @@
     </header>
     
     <body>
-        <h1>Hello World!</h1>
-    <%=request.getAttribute("First_name")%>
+        <br>
+        <h3>First Name</h3>
+        <div class="details">--> <%=request.getAttribute("first_name")%></div>
+        <br>
+        <h3>Last Name</h3>
+        <div class="details">--> <%=request.getAttribute("last_name")%></div>
+        <h3>Email</h3>
+        <br>
+        <div class="details">--> <%=request.getAttribute("email")%></div>
     </body>
 </html>

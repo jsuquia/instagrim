@@ -1,0 +1,85 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 20, 2016, 11:00:30 AM
+    Author     : Javier
+*/
+
+html,body{
+    margin:0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+header{
+    height: 130px;
+    background-color: #eae8e8;
+}
+
+h1{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: black;
+    font-size: 45px;
+}
+
+h2{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    margin-top: -20px;
+    font-size: 16px;
+    color: #696969;
+}
+
+h3{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.details{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    margin-left: 60px;
+    font-size: 15px;
+}
+
+.title{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    float: left;
+    padding-left: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 80px;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    background-color: #eae8e8;
+    width: auto;
+    float: right;
+    padding-right: 25px;
+}
+
+li {
+    float: left;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
