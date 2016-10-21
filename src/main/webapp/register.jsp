@@ -32,20 +32,20 @@
                     </div>
                     
                     <div class="fullname">
-                        <input type="text" ID="firstname" name="firstname" pattern=".{0,}" title="check" value="Name" onfocus="this.value = this.value=='Name'?'':this.value;" onblur="this.value = this.value==''?'Name':this.value;"> 
-                        <input type="text" ID="surname" name="surname" value="Surname" onfocus="this.value = this.value=='Surname'?'':this.value;" onblur="this.value = this.value==''?'Surname':this.value;"/>
+                        <input type="text" ID="firstname" name="firstname" required placeholder="First Name"> 
+                        <input type="text" ID="surname" name="surname" required="required" placeholder="Last Name">
                     </div>
                     
                     <div class="username">
-                        <input type="text" name="username" value="Username" onfocus="this.value = this.value=='Username'?'':this.value;" onblur="this.value = this.value==''?'Username':this.value;"/>
+                        <input type="text" name="username" pattern="[a-z]{1,15}" required title="Username should only contain lowercase letters. e.g. javier" placeholder="Username">
                     </div>
                     
                     <div class="email">
-                        <input type="email" name="email" value="Email" onfocus="this.value = this.value=='Email'?'':this.value;" onblur="this.value = this.value==''?'Email':this.value;"/>
+                        <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required ="required" placeholder="Email">
                     </div>
                     
                     <div class="password">
-                        <input type="password" name="password" value="Password" onfocus="this.value = this.value=='Password'?'':this.value;" onblur="this.value = this.value==''?'Password':this.value;"/>
+                        <input type="password" name="password" pattern=".{6,15}" required title="Password should have 6 or more characters."  placeholder="Password">
                     </div>
 
                     <div class="submit">
