@@ -54,14 +54,14 @@
                 <h3>Email</h3>
                 <div class="details">&#8640; <%=request.getAttribute("email")%></div>
                 <br>
-                <!--<button id="button" class="details" type="button" onclick="myFunction()">Edit</button>-->
             </div>
+                
             <form method="POST"  action="Update">
                 <div class="edit">
                     <input type="text" name="firstname" required placeholder="First Name"> 
                     <input type="text" name="surname" required="required" placeholder="Last Name">
                     <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required ="required" placeholder="Email">
-                    <input type="submit" value="Update"/>
+                    <input type="submit" ID="updatebtn" value="Update"/>
                 </div>
             </form>
             <!--
