@@ -22,7 +22,7 @@
         </div>
 
         <ul>
-            <li class="home"><a href="/Instagrim/Login">Home</a></li>
+            <li class="home"><a href="/Instagrim/Main">Home</a></li>
             <li><a href="/Instagrim/Upload">Upload</a></li>
                 <%
 
