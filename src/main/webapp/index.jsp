@@ -30,12 +30,12 @@
 
                     <div class="username">
                         <div class="fontawesome-user" for="login__username"></div>
-                        <input type="text" name="username" required="required">
+                        <input type="text" name="username" required="required" placeholder="Username">
                     </div>
 
                     <div class="password">
                         <label class="fontawesome-lock" for="login__password"></label>
-                        <input type="password" name="password" required="required"> <!--minlength="6"-->
+                        <input type="password" name="password" pattern=".{6,15}" required title="Password should have 6 or more characters." placeholder="Password">
                     </div>
 
                     <div class="submit">
@@ -67,6 +67,8 @@
             .alert {
                 padding: 20px;
                 background-color: #ff9800;
+                width: 25%;
+                float: right;
                 border-radius: .25rem;
                 color: white;
             }
@@ -93,6 +95,42 @@
         </div>
         <%
             }
-        %>                   
+        %>
+        <%
+            if ((Boolean) request.getAttribute("value") != null) {
+        %>
+        <style>
+            .alert {
+                padding: 20px;
+                background-color: #4CAF50;
+                width: 25%;
+                float: right;
+                border-radius: .25rem;
+                color: white;
+            }
+
+            .closebtn {
+                margin-left: 15px;
+                color: white;
+                font-weight: bold;
+                float: right;
+                font-size: 22px;
+                line-height: 20px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .closebtn:hover {
+                color: black;
+            }
+        </style>
+
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display = 'none';">&times;</span>
+            <strong>Success!</strong> Registered successfully.
+        </div>
+        <%
+            }
+        %>      
     </body>
 </html>

@@ -28,6 +28,23 @@ public class User {
         
     }
     
+    public boolean isRegisterValid(String username){
+        Session session = cluster.connect("instagrim");
+        PreparedStatement ps = session.prepare("SELECT login FROM userprofiles WHERE login =?");
+        ResultSet rs = null;
+        BoundStatement boundStatement = new BoundStatement(ps);
+        rs = session.execute( // this is where the query is executed
+                boundStatement.bind( // here you are binding the 'boundStatement'
+                        username));
+        //We are assuming this always works.  Also a transaction would be good here !
+        if (rs.isExhausted()) {
+            System.out.println("Match Found");
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
     public boolean RegisterUser(String username, String Password, String firstname, String surname, String email){
         AeSimpleSHA1 sha1handler=  new AeSimpleSHA1();
         String EncodedPassword=null;
@@ -45,7 +62,6 @@ public class User {
                 boundStatement.bind( // here you are binding the 'boundStatement'
                         username,EncodedPassword, firstname, surname, email));
         //We are assuming this always works.  Also a transaction would be good here !
-        
         return true;
     }
     
