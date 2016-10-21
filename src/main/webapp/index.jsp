@@ -13,13 +13,13 @@
 <html>
     <head>
         <title>Instagrim</title>
-        <link rel="stylesheet" type="text/css" href="Main.css">
+        <link rel="stylesheet" type="text/css" href="Index.css">
     </head>
     <body>
 
         <div class="content">
 
-            <form method="POST"  action="Login">
+            <form method="POST"  action="Main">
 
                 <div class="center">
 

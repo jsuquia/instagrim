@@ -25,8 +25,8 @@ import uk.ac.dundee.computing.aec.instagrim.stores.LoggedIn;
  *
  * @author Administrator
  */
-@WebServlet(name = "Login", urlPatterns = {"/Login"})
-public class Login extends HttpServlet {
+@WebServlet(name = "Main", urlPatterns = {"/Main"})
+public class Main extends HttpServlet {
 
     Cluster cluster=null;
 
@@ -39,7 +39,7 @@ public class Login extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {        
-        RequestDispatcher rd=request.getRequestDispatcher("login.jsp");
+        RequestDispatcher rd=request.getRequestDispatcher("main.jsp");
 	    rd.forward(request,response);
     }
 
@@ -72,12 +72,12 @@ public class Login extends HttpServlet {
             session.setAttribute("LoggedIn", lg);
             
             System.out.println("Session in servlet "+session);
-            RequestDispatcher rd=request.getRequestDispatcher("/login.jsp");
+            RequestDispatcher rd=request.getRequestDispatcher("/main.jsp");
 	    rd.forward(request,response);
             
         }else{
             request.setAttribute("check",false);
-            RequestDispatcher rd=request.getRequestDispatcher("index.jsp");
+            RequestDispatcher rd=request.getRequestDispatcher("/index.jsp");
 	    rd.include(request,response);
         }
         
