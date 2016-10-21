@@ -27,7 +27,7 @@
                 <div class="center">
 
                     <div class="back">
-                        <a href="/Instagrim">&#8636; back</a>
+                        <a href="/Instagrim">&#10092; back</a>
                     </div>
                     <div class="title">
                         <h1><span style="color: black">Insta</span><span style="color: #696969">Grim</span></h1>
