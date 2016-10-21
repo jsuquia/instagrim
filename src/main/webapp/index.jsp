@@ -95,42 +95,6 @@
         </div>
         <%
             }
-        %>
-        <%
-            if ((Boolean) request.getAttribute("value") != null) {
-        %>
-        <style>
-            .alert {
-                padding: 20px;
-                background-color: #4CAF50;
-                width: 25%;
-                float: right;
-                border-radius: .25rem;
-                color: white;
-            }
-
-            .closebtn {
-                margin-left: 15px;
-                color: white;
-                font-weight: bold;
-                float: right;
-                font-size: 22px;
-                line-height: 20px;
-                cursor: pointer;
-                transition: 0.3s;
-            }
-
-            .closebtn:hover {
-                color: black;
-            }
-        </style>
-
-        <div class="alert">
-            <span class="closebtn" onclick="this.parentElement.style.display = 'none';">&times;</span>
-            <strong>Success!</strong> Registered successfully.
-        </div>
-        <%
-            }
-        %>      
+        %>   
     </body>
 </html>

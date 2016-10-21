@@ -37,6 +37,17 @@ nav {
     background-color: white;
 }
 
+.back{
+    margin-top: 5px;
+    margin-bottom: -20px;
+    padding-left: 5px;
+}
+a{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #696969;
+    text-decoration: none;
+}
+
 .fullname, .username, .email, .password, .submit{
     border-radius: .25rem;
     height: 40px;

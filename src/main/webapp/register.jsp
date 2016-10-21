@@ -26,6 +26,9 @@
 
                 <div class="center">
 
+                    <div class="back">
+                        <a href="/Instagrim">&#8636; back</a>
+                    </div>
                     <div class="title">
                         <h1><span style="color: black">Insta</span><span style="color: #696969">Grim</span></h1>
                         <h2>Your world in Black and White</h2>
@@ -100,10 +103,10 @@
 
 
         </div>
-        <footer>
+        <!--<footer>
             <ul>
                 <li class="footer"><a href="/Instagrim">Home</a></li>
             </ul>
-        </footer>
+        </footer> -->
     </body>
 </html>

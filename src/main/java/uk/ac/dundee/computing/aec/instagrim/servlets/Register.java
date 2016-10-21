@@ -67,9 +67,7 @@ public class Register extends HttpServlet {
         //System.out.println("Session in servlet "+session);
         if (us.isRegisterValid(username)){
             us.RegisterUser(username, password, firstname, surname, email);
-            request.setAttribute("valid",true);
-            RequestDispatcher rd=request.getRequestDispatcher("/");
-	    rd.include(request,response);
+            response.sendRedirect("/Instagrim");
         }else{
             request.setAttribute("valid",false);
             RequestDispatcher rd=request.getRequestDispatcher("/register.jsp");
