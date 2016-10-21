@@ -14,7 +14,7 @@
         <title>User Profile</title>
         <link rel="stylesheet" type="text/css" href="Login.css" >
     </head>
-    
+
     <header>
         <div class="title">
             <h1><span style="color: black">Insta</span><span style="color: #696969">Grim</span></h1>
@@ -41,14 +41,42 @@
 
         </ul>
     </header>
-    
+
+
     <body>
-        <br>
-        <h3>First Name</h3>
-        <div class="details">--> <%=request.getAttribute("first_name")%></div>
-        <h3>Last Name</h3>
-        <div class="details">--> <%=request.getAttribute("last_name")%></div>
-        <h3>Email</h3>
-        <div class="details">--> <%=request.getAttribute("email")%></div>
+        <div id="layout">
+            <div id="profile">
+                <br>
+                <h3>First Name</h3>
+                <div id="test" class="details">&#8640; <%=request.getAttribute("first_name")%></div>
+                <h3>Last Name</h3>
+                <div class="details">&#8640; <%=request.getAttribute("last_name")%></div>
+                <h3>Email</h3>
+                <div class="details">&#8640; <%=request.getAttribute("email")%></div>
+                <br>
+                <!--<button id="button" class="details" type="button" onclick="myFunction()">Edit</button>-->
+            </div>
+            <form method="POST"  action="Update">
+                <div class="edit">
+                    <input type="text" name="firstname" required placeholder="First Name"> 
+                    <input type="text" name="surname" required="required" placeholder="Last Name">
+                    <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required ="required" placeholder="Email">
+                    <input type="submit" value="Update"/>
+                </div>
+            </form>
+            <!--
+                        <script>
+                            function myFunction() {
+            
+                                var dummy = '<div class="edit">'
+                                        + '<input type="text" name="firstname" required placeholder="First Name"> '
+                                        + '<input type="text" name="surname" required="required" placeholder="Last Name">'
+                                        + '<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required ="required" placeholder="Email">'
+                                        + '<input type="submit" value="Update"/>'
+                                        + '</div>';
+                                document.getElementById('layout').innerHTML += dummy;
+                            }
+                        </script>-->
+        </div>
     </body>
 </html>

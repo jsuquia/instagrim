@@ -65,6 +65,18 @@ public class User {
         return true;
     }
     
+    
+    public boolean updateDetails(String firstname, String lastname, String email, String username){
+        Session session = cluster.connect("instagrim");
+        PreparedStatement ps = session.prepare("UPDATE userprofiles SET first_name=?,last_name=?, email=? WHERE login=?;");  //CQL code
+        ResultSet rs = null;
+        BoundStatement boundStatement = new BoundStatement(ps);
+        rs = session.execute( // this is where the query is executed
+                boundStatement.bind( // here you are binding the 'boundStatement'
+                        firstname, lastname, email, username));
+    return true;  
+    }
+    
     public boolean IsValidUser(String username, String Password){
         AeSimpleSHA1 sha1handler=  new AeSimpleSHA1();
         String EncodedPassword=null;

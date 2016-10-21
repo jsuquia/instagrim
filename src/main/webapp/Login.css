@@ -105,3 +105,24 @@ li a.current{
     margin-left: 50px;
     margin-bottom: 20px;
 }
+
+#profile{
+    width: 400px;
+}
+
+.edit{
+    position: relative;
+    margin:auto;
+    margin-top: -240px;
+    width: 50%;
+    width: 200px;
+}
+
+input[type=text], input[type=email], input[type=submit]{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+}
+
+input{
+    margin-bottom: 50px;
+}
