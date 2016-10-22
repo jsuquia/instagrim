@@ -101,6 +101,12 @@ li a.current{
     background-color: #ddd;
 }
 
+.layout{
+    /*background-color: red;*/
+    width: 300px;
+    display: inline-block;
+}
+
 .grid{
     margin-left: 50px;
     margin-bottom: 20px;

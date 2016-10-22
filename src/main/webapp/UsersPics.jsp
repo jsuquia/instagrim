@@ -56,9 +56,30 @@
             while (iterator.hasNext()) {
                 Pic p = (Pic) iterator.next();
 
-        %>
-        
-        <a href="/Instagrim/Image/<%=p.getSUUID()%>"> <img class="grid" src="/Instagrim/Thumb/<%=p.getSUUID()%>"><a/>
+        %>   
+
+        <style>
+            .closebtn {
+                margin-left: 15px;
+                color: grey;
+                font-weight: bold;
+                float: right;
+                font-size: 22px;
+                line-height: 20px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .closebtn:hover {
+                color: black;
+            }
+        </style>
+
+        <div class="layout">
+            <span class="closebtn" onclick="this.parentElement.style.display = 'none';">&times;</span>
+            <a href="/Instagrim/Image/<%=p.getSUUID()%>"><img class="grid" src="/Instagrim/Thumb/<%=p.getSUUID()%>"></a>
+        </div>
+
 
         <%
 
