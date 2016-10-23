@@ -13,13 +13,6 @@
         <link rel="stylesheet" type="text/css" href="register.css" >
     </head>
     <body>
-        <!-- <nav>
-             <ul>
-                 
-                 <li><a href="/Instagrim/Images/majed">Sample Images</a></li>
-             </ul>
-         </nav>-->
-
         <div class="content">
 
             <form method="POST"  action="Register">
@@ -77,7 +70,7 @@
                     color: white;
                 }
 
-                .closebtn {
+                .close {
                     margin-left: 15px;
                     color: white;
                     font-weight: bold;
@@ -88,14 +81,14 @@
                     transition: 0.3s;
                 }
 
-                .closebtn:hover {
+                .close:hover {
                     color: black;
                 }
             </style>
 
             <div class="alert">
-                <span class="closebtn" onclick="this.parentElement.style.display = 'none';">&times;</span>
-                <strong>Warning!</strong> Username already taken.
+                <span class="close" onclick="this.parentElement.style.display = 'none';">&times;</span>
+                <strong>Username already taken.</strong> 
             </div>
             <%
                 }

@@ -73,7 +73,7 @@
                 color: white;
             }
 
-            .closebtn {
+            .close {
                 margin-left: 15px;
                 color: white;
                 font-weight: bold;
@@ -84,14 +84,14 @@
                 transition: 0.3s;
             }
 
-            .closebtn:hover {
+            .close:hover {
                 color: black;
             }
         </style>
 
         <div class="alert">
-            <span class="closebtn" onclick="this.parentElement.style.display = 'none';">&times;</span>
-            <strong>Warning!</strong> Incorrect username and/or password.
+            <span class="close" onclick="this.parentElement.style.display = 'none';">&times;</span>
+            <strong>Incorrect</strong> username and/or password.
         </div>
         <%
             }

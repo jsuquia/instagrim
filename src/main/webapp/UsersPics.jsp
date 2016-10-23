@@ -59,7 +59,7 @@
         %>   
 
         <style>
-            .closebtn {
+            .delete {
                 margin-left: 15px;
                 color: grey;
                 font-weight: bold;
@@ -70,15 +70,17 @@
                 transition: 0.3s;
             }
 
-            .closebtn:hover {
+            .delete:hover {
                 color: black;
             }
         </style>
-
+        
         <div class="layout">
-            <span class="closebtn" onclick="this.parentElement.style.display = 'none';">&times;</span>
+                
+            <span class="delete" onclick="this.parentElement.style.display = 'none';" >&times;</span> <!-- not proper way of deleting a picture -->
             <a href="/Instagrim/Image/<%=p.getSUUID()%>"><img class="grid" src="/Instagrim/Thumb/<%=p.getSUUID()%>"></a>
-        </div>
+                
+            </div>
 
 
         <%

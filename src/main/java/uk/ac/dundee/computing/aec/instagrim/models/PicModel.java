@@ -86,6 +86,16 @@ public class PicModel {
             System.out.println("Error --> " + ex);
         }
     }
+   /*
+    public void deletePic(String uuid){
+        Session session = cluster.connect("instagrim");
+        PreparedStatement ps = session.prepare("DELETE FROM Pics WHERE picid=?");  //CQL code
+        ResultSet rs = null;
+        BoundStatement boundStatement = new BoundStatement(ps);
+        rs = session.execute( // this is where the query is executed
+                boundStatement.bind( // here you are binding the 'boundStatement'
+                        uuid)); 
+    }*/
 
     public byte[] picresize(String picid,String type) {
         try {
